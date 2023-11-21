@@ -44,6 +44,30 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Add your own custom styles below */
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            width: 30%;
+            background-color: #fff;
+            padding: 1em;
+            margin: 1em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Responsive styling for smaller screens */
+        @media (max-width: 768px) {
+            .service {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -65,12 +89,20 @@
 
 <section id="services">
     <h2>Our Services</h2>
-    <ul>
-        <li>Web Development</li>
-        <li>Network Security</li>
-        <li>Software Solutions</li>
-        <li>IT Consulting</li>
-    </ul>
+    <div class="services">
+        <div class="service">
+            <h3>Web Development</h3>
+            <p>Custom web solutions tailored to your needs.</p>
+        </div>
+        <div class="service">
+            <h3>Network Security</h3>
+            <p>Protect your data with our advanced security measures.</p>
+        </div>
+        <div class="service">
+            <h3>Software Solutions</h3>
+            <p>Optimize your business processes with our software solutions.</p>
+        </div>
+    </div>
 </section>
 
 <section id="contact">
